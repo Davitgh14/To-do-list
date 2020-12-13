@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <title>TO-FUCKING-DO</title>
+</head>
+<body>
+    <div id="backImg"></div>
+
+    <h1 id="main">TO-DO LIST!</h1>
+
+    <form id="formS">
+        <h2 id="textToDo"><label for="to-do">Set your list here</label></h2><br>
+        <div id="div1">
+        
+        <input id="task" type="text" name="todo" onkeypress="return forEnter(event);" placeholder="What you wanna do" autocomplete="off">
+        <input type="button" id="butt" value="Add to list" onclick="getValue()">
+    
+        </div>
+    </form>
+    <script src="home.js"></script>
+</body>
+</html>

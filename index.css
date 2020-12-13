@@ -1,0 +1,97 @@
+#backImg {
+  background-image: url(Website-Background-Images-HD-Free-Download-Wallpaperxyz.com-36.jpg);
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+#main {
+  text-align: center;
+  /* border: 2px solid black; */
+  height: 35px;
+  width: 98%;
+  font-family: 'Caveat';
+  color: #FC9A35;
+}
+
+#textToDo {
+  text-align: center;
+  height: 10px;
+  width: 98%;
+  color:#E25F2B;
+  /* border: 2px solid black; */
+} 
+
+form {
+    margin: auto;
+}
+
+#div1 {
+    /* border: 2px solid black; */
+    text-align: center;
+    width: 100%;
+}
+
+#dones {
+  /* border: 2px solid black; */
+  text-align: center;
+}
+
+.attButton {
+  height: 20px;
+  position: fixed;
+  left: 64%;
+  border-radius: 25px;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.attChange {
+  height: 20px;
+  position: fixed;
+  left: 60.5%;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.pId {
+    font-family: 'Aldrich', sans-serif;
+    background-color: rgb(170, 68, 211);
+    height: 19px;
+    width: 35%;
+    border: 2px solid black;
+    padding: 5px;
+    position: relative;
+    left: 31.3%;
+    top: 25%;
+    border-radius: 25px;
+}
+
+#butP {
+  color: black;
+  background-color: rgb(170, 68, 211);
+  border: 2px solid black;
+}
+
+#butt {
+  height: 20px;
+  background-color: #FC9A35;
+  border: 2px solid #FC9A35;
+  box-shadow: 3px 3px 5px 1px rgb(0, 0, 0);
+}
+
+#task {
+  height: 16.5px;
+  color: rgb(216, 195, 195);
+  background-color: rgb(24, 18, 54);
+  border: 2px solid rgb(24, 18, 54);
+}
