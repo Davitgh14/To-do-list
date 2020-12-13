@@ -45,8 +45,8 @@ form {
 
 .attButton {
   height: 20px;
-  position: fixed;
-  left: 64%;
+  position: absolute;
+  left: 93%;
   border-radius: 25px;
   color: white;
   background-color: black;
@@ -55,8 +55,8 @@ form {
 
 .attChange {
   height: 20px;
-  position: fixed;
-  left: 60.5%;
+  position: absolute;
+  left: 82.5%;
   border-radius: 15px;
   color: white;
   background-color: black;
