@@ -72,10 +72,12 @@ function getValue() {
     div.appendChild(btnRemove)
 
     // endless input and other possibilities
+    
+    if(!result.innerHTML.replace(/\s/g, '').length) {
+      alert('write something')
 
-    let letters = /[^ ]/g
+     } else if(result.innerHTML.length > 20) {
 
-    if(result.innerHTML.length > 20) {
       big = result.innerHTML
       result.innerHTML = result.innerHTML.slice(0, 20) + '...'
 
@@ -88,14 +90,14 @@ function getValue() {
     } else if(result.innerHTML.length == 0) {
       alert('Write something')
 
-    } else if(result.innerHTML.match(letters)) {
+    } else if(result.innerHTML.match(/[^ ]/g)) {
       result.appendChild(btnRemove)
       result.appendChild(btnChange)
       document.body.appendChild(div);
-    } else {
-      alert('Write something')
-    }
 
+    } else {
+      alert('write something')
+    }
     // change color
 
     let colorArr = ['rgb(101, 211, 68)', 'rgb(170, 68, 211)']
