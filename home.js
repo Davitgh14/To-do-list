@@ -41,6 +41,27 @@ function getValue() {
     attChange.value = 'attChange'
     btnChange.setAttributeNode(attChange)
 
+    // Button Plus
+
+    let btnPlus = document.createElement("input");
+    let attPlus = document.createAttribute('class')
+
+    // For full text
+
+    let big
+
+    // Full view 
+
+    btnPlus.value = "+";
+    btnPlus.type = "button";
+
+    attPlus.value = 'attPlus'
+    btnPlus.setAttributeNode(attPlus)
+
+    btnPlus.onclick = function() {
+      alert(big)
+    }
+
     // Remove Element
      
     btnRemove.onclick = function () {
@@ -55,9 +76,13 @@ function getValue() {
     let letters = /[^ ]/g
 
     if(result.innerHTML.length > 20) {
+      big = result.innerHTML
       result.innerHTML = result.innerHTML.slice(0, 20) + '...'
+
+      result.appendChild(btnPlus)
       result.appendChild(btnRemove)
       result.appendChild(btnChange)
+
       document.body.appendChild(div)
 
     } else if(result.innerHTML.length == 0) {
