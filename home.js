@@ -74,7 +74,7 @@ function getValue() {
     // endless input and other possibilities
     
     if(!result.innerHTML.replace(/\s/g, '').length) {
-      alert('write something')
+      alert('Write something')
 
      } else if(result.innerHTML.length > 20) {
 
@@ -96,7 +96,7 @@ function getValue() {
       document.body.appendChild(div);
 
     } else {
-      alert('write something')
+      alert('Write something')
     }
     // change color
 
