@@ -117,36 +117,41 @@ function getValue() {
     btnChange.onclick = function () {
         let change = prompt('Change it')
   
-        if(change == null) {
-        result.innerHTML = result.innerHTML
-        } else {
+        if(change.length > 20) {
+          result.innerHTML = change.slice(0, 20) + '...'
+          big = change
+          result.appendChild(btnRemove)
+          result.appendChild(btnChange)
+          result.appendChild(btnPlus)
+
+        } else if(result.innerHTML.length > 20 || change.length <= 20) {
           result.innerHTML = change
-        }
-  
-        if(result.innerHTML.length > 20) {
+          result.appendChild(btnRemove)
+          result.appendChild(btnChange)
+
+        } else if(result.innerHTML.length > 20) {
           result.innerHTML = result.innerHTML.slice(0, 20) + '...'
           result.appendChild(btnRemove)
           result.appendChild(btnChange)
   
-        } else if(result.innerHTML.length == 0) {
+        } 
+        
+        if(!change.replace(/\s/g, '').length) {
           alert('Write something')
           result.innerHTML = 'Change me!'
           result.appendChild(btnRemove)
           result.appendChild(btnChange)
   
-        } else if(result.innerHTML.match(letters)) {
+        } else if(result.innerHTML.match(/[^ ]/g)) {
           result.appendChild(btnRemove)
           result.appendChild(btnChange)
-  
-        } else {
-          alert('Write something')
-          result.innerHTML = 'Change me!'
+
+        } else
+          result.innerHTML = change
           result.appendChild(btnRemove)
           result.appendChild(btnChange)
         }
     }
-
-}
 
 // Trigger button after enter
 
