@@ -138,7 +138,7 @@ function getValue() {
         
         if(!change.replace(/\s/g, '').length) {
           alert('Write something')
-          result.innerHTML = 'Change me!'
+          result.innerHTML = 'Change me'
           result.appendChild(btnRemove)
           result.appendChild(btnChange)
   
